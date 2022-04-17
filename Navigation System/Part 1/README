@@ -1,0 +1,44 @@
+Name: Bashar Harash
+CCID: HARASH
+CMPUT 275, WINTER 2022
+Assignment part I
+
+Included Files:
+		digraph.cpp
+		digraph.h
+		dijkstra.cpp
+		dijkstra.h
+		edmonton-roads-2.0.1.txt
+		Makefile
+		server.cpp
+		wdigraph.h
+		README
+
+Running instruction:
+	1-	open the terminal and make sure you are located in the same directory as the files mentioned above.
+	2-	Type into the terminal "make server", this will compile and link the needed file
+	3-	to compute the total number of waypoints run the excutable file server using the command:
+		./server, then you will be prompted to stdin, then the user must provide a valid input line
+		that starts with 'R' and will the 'R' will be followed by latitude and longitude coordinates
+		values, then the user need to respond with 'A' as a valid request for the server to continue
+		, the sever will stop once there are no more waypoints. Alternatively, if the user has the input 
+		stored in a txt file the following command can be used to run the server:
+		"./server < test-input.txt > mysol.txt" assuming test-input.txt is in the same directory 
+		as the files mentioned above
+	4-	use the command make claen once done.
+
+
+Notes and assuptions:
+	- if the user failed to follow step 1-4 properly the program will not work as intended
+	- you can only pass input files that has similar format to the edmonton-roads-2.0.1.txt file
+	  since the program is coded based on that.
+	-  When there is no path from the start to the end vertex nearest to the start and end points
+	   the server will print:
+	   N 0
+	   E
+	   and end the session.
+
+
+References:
+	- CMPUT_275_Assignment_Winter_2022.pdf found on CMPUT275 eclass page
+	- Code discussed in class in lecture 14 , found on the CMPUT275 Github page
