@@ -1,0 +1,47 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"lf4FCKlLH_\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">ANC Employee Expense Claim</span>\",\"col\":12}},{\"id\":\"pLtXMaJT2G\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Expense Claim\",\"col\":3}}]",
+ "creation": "2023-01-23 09:34:13.153299",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "money-coins-1",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "ANC Employee Expense Claim",
+ "links": [],
+ "modified": "2023-01-23 09:36:30.492820",
+ "modified_by": "Administrator",
+ "module": "Expenses_form",
+ "name": "ANC Employee Expense Claim",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Workspace Manager"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  },
+  {
+   "role": "Employee"
+  }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Expense Claim",
+   "link_to": "Expense Claim",
+   "type": "DocType"
+  }
+ ],
+ "title": "ANC Employee Expense Claim"
+}

@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EC-.####",
+ "creation": "2023-01-12 08:27:33.721611",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "column_break_fn9z",
+  "full_name",
+  "section_break_mpcf",
+  "claim_date",
+  "column_break_dofo",
+  "department",
+  "section_break_bwqv",
+  "expense_line",
+  "amended_from",
+  "total_amount_entered",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "read_only_depends_on": "eval:doc.employee_id != null;",
+   "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only_depends_on": "eval:doc.full_name != null;"
+  },
+  {
+   "fieldname": "claim_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Claim Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expense_line",
+   "fieldtype": "Table",
+   "label": "Expense Line",
+   "options": "Expense Line 1"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense Claim",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fn9z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mpcf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dofo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bwqv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "This is the total amount based on the values entered above, the claimable amount is subject to approval.",
+   "fieldname": "total_amount_entered",
+   "fieldtype": "Float",
+   "label": "Total Amount Entered",
+   "read_only": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only_depends_on": "eval:doc.department != null;"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "label": "Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-01-23 09:25:05.430988",
+ "modified_by": "Administrator",
+ "module": "Expenses_form",
+ "name": "Expense Claim",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name",
+ "track_changes": 1
+}
